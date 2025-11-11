@@ -1,0 +1,5 @@
+{
+  "name": "MOPH Portal Dashboard",
+  "description": "A centralized dashboard for Ministry of Public Health (MOPH) Thailand services and 30-Baht policy links.",
+  "requestFramePermissions": []
+}
