@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 server/server.js
+
+# Environment variables
+.env
+server/.env
