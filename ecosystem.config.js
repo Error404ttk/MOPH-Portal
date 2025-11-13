@@ -25,7 +25,7 @@ module.exports = {
       name: "moph-portal-frontend",
       script: "serve",
       cwd: appDir,
-      args: ["-s", "dist", "-l", "3000", "--cors", "--single"],
+      args: ["-s", "dist", "--listen", "3000", "--cors", "--single"],
       env: {
         PM2_SERVE_PATH: "dist",
         PM2_SERVE_PORT: 3000,
