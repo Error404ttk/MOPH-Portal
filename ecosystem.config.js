@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "moph-portal-backend",
-      script: "./server/server.js", // Path to your backend entry file
+      script: "server.js", // Path to your backend entry file
       cwd: "./server", // Set the current working directory for the backend
       instances: 1,
       autorestart: true,
