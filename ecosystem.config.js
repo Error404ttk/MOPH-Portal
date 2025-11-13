@@ -1,9 +1,12 @@
+const path = require('path');
+const appDir = __dirname;
+
 module.exports = {
   apps: [
     {
       name: "moph-portal-backend",
-      script: "./backend/server.js",
-      cwd: "/var/www/moph-portal",
+      script: "./server/server.js",
+      cwd: appDir,
       instances: 1,
       autorestart: true,
       watch: false,
@@ -13,18 +16,18 @@ module.exports = {
         PORT: 3001,
         HOST: "0.0.0.0",
       },
-      env_file: "/var/www/moph-portal/.env",
-      error_file: "/var/log/moph-portal/backend-error.log",
-      out_file: "/var/log/moph-portal/backend-out.log",
+      env_file: "./.env",
+      error_file: "./logs/backend-error.log",
+      out_file: "./logs/backend-out.log",
       time: true
     },
     {
       name: "moph-portal-frontend",
       script: "serve",
-      cwd: "/var/www/moph-portal",
-      args: ["-s", "frontend", "-l", "3000", "--cors", "--single"],
+      cwd: appDir,
+      args: ["-s", "dist", "-l", "3000", "--cors", "--single"],
       env: {
-        PM2_SERVE_PATH: "frontend",
+        PM2_SERVE_PATH: "dist",
         PM2_SERVE_PORT: 3000,
         PM2_SERVE_SPA: "true",
         PM2_SERVE_HOMEPAGE: "/index.html"
