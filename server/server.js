@@ -11,11 +11,11 @@ const port = 3001;
 
 // Database configuration
 const dbConfig = {
-  host: 'xxx',
-  port: 'xxx',
-  user: 'xxx',
-  password: 'xxx',
-  database: 'xxx',
+  host: '192.168.99.71',
+  port: '3307',
+  user: 'srp',
+  password: 'S@r@pee11135',
+  database: 'moph_portal_db',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
