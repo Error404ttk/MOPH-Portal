@@ -2,6 +2,7 @@ import { LinkCategory, FooterData, User, DatabaseConfig } from './types';
 
 export const MOPH_DATA: LinkCategory[] = [
   {
+    id: 'moph-main',
     title: "รวมเว็บไซต์กระทรวงสาธารณสุข | MOPH",
     description: "บริการอิเล็กทรอนิกส์และระบบสารสนเทศหลักของกระทรวงฯ",
     links: [
@@ -18,6 +19,7 @@ export const MOPH_DATA: LinkCategory[] = [
     ]
   },
   {
+    id: 'moph-30baht',
     title: "นโยบาย 30 บาทรักษาทุกที่",
     description: "ระบบสนับสนุนโครงการยกระดับหลักประกันสุขภาพแห่งชาติ",
     links: [
