@@ -9,8 +9,11 @@ import { Search, Building2, Settings, LogOut, Loader, AlertTriangle, ServerCrash
 import type { LinkCategory, FooterData, User, DatabaseConfig } from './types';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Use the same port as the server is running on (check terminal output)
-const API_BASE_URL = 'http://localhost:3001';
+// Import environment configuration
+import { config } from './src/config';
+
+// Use the configured API base URL
+const API_BASE_URL = config.API_BASE_URL;
 
 const AppContent: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
