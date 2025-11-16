@@ -1,0 +1,47 @@
+{
+  "name": "moph-portal-backend",
+  "version": "1.0.0",
+  "description": "Backend server for the MOPH Portal Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop moph-portal",
+    "delete": "pm2 delete moph-portal",
+    "logs": "pm2 logs moph-portal",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.2.1",
+    "framer-motion": "^11.0.8",
+    "helmet": "^8.1.0",
+    "immer": "^10.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.453.0",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.10.1",
+    "pm2": "^6.0.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.4.0",
+    "vite": "^7.2.2"
+  }
+}

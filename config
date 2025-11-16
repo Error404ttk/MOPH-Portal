@@ -1,0 +1,10 @@
+{
+  "database": {
+    "host": "192.168.99.71",
+    "user": "srp",
+    "password": "S@r@pee11135",
+    "database": "moph_portal_db",
+    "port": 3307
+  },
+  "jwtSecret": "S@r@pee11135!Hospital"
+}
