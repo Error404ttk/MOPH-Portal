@@ -4,7 +4,8 @@
     "user": "xxx",
     "password": "xxx",
     "database": "xxx",
-    "port": 3307
+    "port": xxx
   },
   "jwtSecret": "xxx"
 }
+
