@@ -35,7 +35,7 @@ const CookieConsent = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-gray-900 bg-opacity-90 text-white p-4 z-50 shadow-lg">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <p className="text-sm mb-2 md:mb-0 md:mr-4">
-          เว็บไซต์นี้มีการใช้คุกกี้เพื่อปรับปรุงการให้บริการ หากต้องการข้อมูลเพิ่มเติมเกี่ยวกับการใช้คุกกี้ของเรา โปรดดู <a href="/privacy-policy" className="underline hover:text-gray-300">นโยบายความเป็นส่วนตัว</a>
+          เว็บไซต์นี้มีการใช้คุกกี้เพื่อปรับปรุงการให้บริการ หากต้องการข้อมูลเพิ่มเติมเกี่ยวกับการใช้คุกกี้ของเรา โปรดดู <a href="https://sarapeehospital.go.th/downloads/document/139/1699324732.pdf" className="underline hover:text-gray-300">นโยบายความเป็นส่วนตัว</a>
         </p>
         <button 
           onClick={handleAccept}
