@@ -3,6 +3,7 @@ import AdminDashboard from './components/AdminDashboard';
 import LoginModal from './components/LoginModal';
 import QrCodeModal from './components/QrCodeModal';
 import { ToastProvider, useToast } from './components/ToastSystem';
+import CookieConsent from './components/CookieConsent';
 // FIX: Import AlertTriangle icon.
 import { Search, Building2, Settings, LogOut, Loader2, AlertTriangle } from 'lucide-react';
 import { LinkCategory, FooterData, User, About } from './types';
@@ -423,6 +424,8 @@ const AppContent: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      <CookieConsent />
     </div>
   );
 };
